@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Shipping.master.cs" Inherits="HeliSound.Shipping.Shipping" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>HeliSound Shippment</title>
+    <link href="../Styles/main.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+     <div class="masterPage" >
+            
+            <h1 class="banner_text">HeliSound inc.</h1>
+            <div class="divRow">
+                 <asp:Menu ID="mnuMain" runat="server"  
+                        Orientation="Horizontal" CssClass="nav" 
+                        StaticMenuItemStyle-CssClass="menuButton1" 
+                     onmenuitemclick="mnuMain_MenuItemClick">
+                      <Items>
+                        <asp:MenuItem Text="Home" Value="Home"></asp:MenuItem>
+                        <asp:MenuItem Text="Shipping" Value="Shipping"></asp:MenuItem>
+                        <asp:MenuItem Text="Customer Functions" Value="Customer Functions"></asp:MenuItem>
+                        <asp:MenuItem Text="Profile" Value="Profile"></asp:MenuItem>
+                        <asp:MenuItem Text="Log Out" Value="Log Out"></asp:MenuItem>
+                      </Items>
+                   </asp:Menu>
+                   <asp:TextBox ID="txtID" runat="server" Visible="False" Width="1px"></asp:TextBox>
+                   <asp:TextBox ID="txtRole" runat="server" Visible="False" Width="1px"></asp:TextBox>
+                   <asp:Label ID="lblFullName" runat="server" Text="Hello!" CssClass="nameLbl"></asp:Label>
+               </div>
+        <asp:LinkButton ID="lnkbtnBack" runat="server" CssClass="back" 
+                      Visible="False" onclick="lnkbtnBack_Click">Back</asp:LinkButton>
+        
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

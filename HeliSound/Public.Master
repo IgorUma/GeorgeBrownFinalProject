@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Public.Master.cs" Inherits="HeliSound.Admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>HeliSound</title>
+    <link href="Styles/main.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="masterPage">
+        <div class="divCenter">
+            <img src="Images/helisoundBanner.PNG" alt="Banner" class="banner" />
+        
+        <div class="divRow">
+            <%--<asp:Menu ID="mnuMain" runat="server"  
+                Orientation="Horizontal" CssClass="header" StaticMenuItemStyle-CssClass="menuButton">
+                <Items>
+                    <asp:MenuItem Text="Home" Value="Home"></asp:MenuItem>
+                    <asp:MenuItem Text="Profile" Value="Profile"></asp:MenuItem>
+                    <asp:MenuItem Text="Order" Value="Order"></asp:MenuItem>
+                    <asp:MenuItem Text="Log Out" Value="Log Out"></asp:MenuItem>
+                </Items>
+            </asp:Menu>--%>
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

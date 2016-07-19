@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Customer.master.cs" Inherits="HeliSound.Customer.Customer" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>HeliSound</title>
+    <link href="../Styles/main.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+     <div class="masterPage" >
+          
+            <h1 class="banner_text">HeliSound inc.</h1>
+            <div class="divRow">
+                 <asp:Menu ID="mnuMain" runat="server"  
+                        Orientation="Horizontal" CssClass="nav" 
+                        StaticMenuItemStyle-CssClass="menuButton1" 
+                     onmenuitemclick="mnuMain_MenuItemClick" >
+                      <Items>
+                        <asp:MenuItem Text="Home" Value="Home" ></asp:MenuItem>
+                        <asp:MenuItem Text="Order" Value="Order" > </asp:MenuItem>
+                        <asp:MenuItem Text="Track Order" Value="Track Order"></asp:MenuItem>
+                        <asp:MenuItem Text="History" Value="History"></asp:MenuItem>
+                        <asp:MenuItem Text="Profile" Value="Profile"></asp:MenuItem>
+                        <asp:MenuItem Text="Change Password" Value="Change Password"></asp:MenuItem>
+                        <asp:MenuItem Text="Log Out" Value="Log Out"></asp:MenuItem>
+                      </Items>
+
+
+                   </asp:Menu>
+                   <asp:Label ID="lblFullName" runat="server" Text="Hello!" CssClass="nameLbl"></asp:Label>
+                <asp:LinkButton ID="lnkbtnBack" runat="server" CssClass="back" 
+                     onclick="lnkbtnBack_Click" Visible="False" CausesValidation="False">Back</asp:LinkButton>
+                <asp:TextBox ID="txtID" runat="server" Visible="False" Width="1px"></asp:TextBox>
+               </div>
+               <asp:TextBox ID="txtRole" runat="server" Visible="False" Width="1px"></asp:TextBox>
+               
+         
+        
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

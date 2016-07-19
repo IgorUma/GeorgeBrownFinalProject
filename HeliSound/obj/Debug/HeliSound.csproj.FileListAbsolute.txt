@@ -1,0 +1,5 @@
+C:\Users\user\Desktop\Uma\Commercial Web Application Development\04-Web App Dev\Project\HeliSound\HeliSound\bin\HeliSound.dll
+C:\Users\user\Desktop\Uma\Commercial Web Application Development\04-Web App Dev\Project\HeliSound\HeliSound\bin\HeliSound.pdb
+C:\Users\user\Desktop\Uma\Commercial Web Application Development\04-Web App Dev\Project\HeliSound\HeliSound\obj\Debug\HeliSound.dll
+C:\Users\user\Desktop\Uma\Commercial Web Application Development\04-Web App Dev\Project\HeliSound\HeliSound\obj\Debug\HeliSound.pdb
+C:\Users\user\Desktop\Uma\Commercial Web Application Development\04-Web App Dev\Project\HeliSound\HeliSound\obj\Debug\HeliSound.csprojResolveAssemblyReference.cache

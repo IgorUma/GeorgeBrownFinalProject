@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Administration.master.cs" Inherits="HeliSound.Administration.Administration" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Administration</title>
+    <link href="../Styles/main.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="masterPage" >
+          
+            <h1 class="banner_text">HeliSound inc.</h1>
+            <div class="divRow">
+                 <asp:Menu ID="mnuMain" runat="server"  
+                        Orientation="Horizontal" CssClass="nav" 
+                        StaticMenuItemStyle-CssClass="menuButton1" 
+                     onmenuitemclick="mnuMain_MenuItemClick" >
+                      <Items>
+                        <asp:MenuItem Text="Home" Value="Home" ></asp:MenuItem>
+                        <asp:MenuItem Text="Suppliers" Value="Suppliers" > </asp:MenuItem>
+                        <asp:MenuItem Text="Categories" Value="Categories"></asp:MenuItem>
+                        <asp:MenuItem Text="Roles" Value="Roles"></asp:MenuItem>
+                        <asp:MenuItem Text="Users" Value="Users"></asp:MenuItem>
+                        <asp:MenuItem Text="Products" Value="Products"></asp:MenuItem>
+                        <asp:MenuItem Text="Customers" Value="Customers"></asp:MenuItem>
+                        <asp:MenuItem Text="Orders" Value="Orders"></asp:MenuItem>
+                        <asp:MenuItem Text="Reports" Value="Reports"></asp:MenuItem>
+                        <asp:MenuItem Text="Log Out" Value="Log Out"></asp:MenuItem>
+                      </Items>
+
+
+                   </asp:Menu>
+                   <asp:Label ID="lblFullName" runat="server" Text="Hello!" CssClass="nameLbl"></asp:Label>
+                <asp:TextBox ID="txtID" runat="server" Visible="False" Width="1px"></asp:TextBox>
+               </div>
+        
+        
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
